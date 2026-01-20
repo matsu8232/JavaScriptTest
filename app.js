@@ -1,15 +1,15 @@
-let promptStr = prompt('数字を入力してください');
+let input = prompt('数字を入力してください');
 
-let x = promptStr % 15;
-let y = promptStr % 3;
-let z = promptStr % 5; 
+fizzBuzz(input);
 
-if( x === 0 ){
-    console.log('FizzBuzz');
-}else if( y === 0 ){
-    console.log('Fizz');
-}else if( z === 0){
-    console.log('Buzz');
-}else{
-    console.log(promptStr);
-}
+function fizzBuzz(num) {
+    if ( num % 15 === 0) {
+        alert('FizzBuzz');
+    }else if ( num % 3 === 0) {
+        alert('Fizz');
+    }else if ( num % 5 === 0) {
+        alert('Buzz');
+    }else{
+        alert(num);
+    }
+} 
